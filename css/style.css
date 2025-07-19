@@ -1,0 +1,152 @@
+
+/* Adicionar uma fonte externa */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Reset (limpa as configurações padrão dos navegadores) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    background-color: #dddddd;
+    color: #232323;
+}
+
+nav {
+    background-color: #000000c3;
+    color: #f9f9f9;
+
+    /* Fixa a barra de navegação */
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    padding: 16px 32px;
+
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+        display: flex;
+        gap: 4px;
+        list-style-type: none;
+        
+        a {
+            text-decoration: none;
+            color: #f9f9f9;
+            padding: 8px;
+            transition: 0.3s;
+            
+            /* Ao passar o mouse sobre */
+            &:hover {
+                color: #8f5bff;
+            }
+        }
+
+        /* O mesmo que acima */
+        /* a:hover {
+            color: red;
+        } */
+    }
+}
+
+header {
+    /* height: 200px; */
+    height: 400px;
+    background-image: url("https://cdn.pixabay.com/photo/2016/02/01/00/56/news-1172463_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    /* opacity: 50%; */
+    filter: brightness(50%);
+}
+
+main {
+    padding: 32px;
+}
+
+/* --- Sections --- */
+section {
+    min-height: 600px;
+    padding-top: 64px;
+
+    /* h2 {
+        margin-bottom: 16px;
+    } */
+
+    /* TESTE */
+    border: 1px solid red;
+}
+
+/* Card Notícia */
+article {
+    display: flex;
+    flex-direction: row; /* Este é o padrão do Flex */
+    justify-content: flex-start; /* Altera o Eixo Principal */
+    /*align-items: center; /* Altera o Eixo Secundário */
+
+    height: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 8px;
+    margin-top: 16px;
+
+    img {
+        height: 100%;
+        width: 350px;
+        border-radius: 4px;
+    }
+
+    div {
+        width: 100%;
+        padding: 32px;
+
+        p {
+            padding-top: 32px;
+            text-align: justify;
+        }
+    }
+
+    .leia-mais {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+
+    /* border: solid 2px #810095; */
+    background-color: #f9f9f9;
+    background-color: #ededed;
+}
+/* /Card Notícia */
+
+/* hr {
+    margin: 16px;
+    border-bottom: #fbfbfb;
+} */
+
+
+
+
+
+
+
+
+footer {
+    text-align: center;
+    padding: 16px;
+    background-color: #232323;
+    color: #dddddd;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+/* REVISAR POSITION ABSOLUTE, FIXED, RELATIVE, FLOAT */
+/* X: 15px Y: -10px */
