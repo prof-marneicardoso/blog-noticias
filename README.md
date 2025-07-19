@@ -2,6 +2,7 @@
 
 Este projeto foi desenvolvido nas aulas do curso Full-Stack com HTML e CSS
 
+[Link para a página](https://prof-marneicardoso.github.io/blog-noticias/)
 
 ---
 A partir daqui, são alguns extras:
